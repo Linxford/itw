@@ -1,6 +1,10 @@
 
 //Get the number of comments
-function innerTotalComments(e){var t=parseInt(e.feed.openSearch$totalResults.$t),n=parseInt(localStorage.getItem("seen"));n=n||0,document.querySelector(".more-cmt").innerHTML=`View all <b>${t}</b> b\review`,document.querySelector(".more-cmt").title=`See all ${t} b\review`,t>n?document.querySelector(".popup-cmt").dataset.text=t-n:t<n&&localStorage.setItem("seen",t)}
+//function innerTotalComments(e){var t=parseInt(e.feed.openSearch$totalResults.$t),n=parseInt(localStorage.getItem("seen"));n=n||0,document.querySelector(".more-cmt").innerHTML=`View all <b>${t}</b> //b\review`,document.querySelector(".more-cmt").title=`See all ${t} b\review`,t>n?document.querySelector(".popup-cmt").dataset.text=t-n:t<n&&localStorage.setItem("seen",t)}
+
+// Lấy số lượng bình luận
+function innerTotalComments(e){var t=parseInt(e.feed.openSearch$totalResults.$t),n=parseInt(localStorage.getItem("seen"));n=n||0,document.querySelector(".more-cmt").innerHTML=`Xem tất cả <b>${t}</b> b\xecnh luận`,document.querySelector(".more-cmt").title=`Xem tất cả ${t} b\xecnh luận`,t>n?document.querySelector(".popup-cmt").dataset.text=t-n:t<n&&localStorage.setItem("seen",t)}
+
 
 // Render comment in popup
 function innerComment(t){var l="<ul class='cmt-ul'>";for(let a=0;a<t;a++){var n=comments[a];l+=`
