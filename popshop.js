@@ -3,7 +3,7 @@ const rahJsShop = document[_0x3f0e[1]](_0x3f0e[0]);
 rahJsShop[_0x3f0e[2]] = _0x3f0e[3];
 rahJsShop[_0x3f0e[4]] = _0x3f0e[5];
 document[_0x3f0e[7]][_0x3f0e[6]](rahJsShop);
-$(document)[_0x3f0e[17]](function () {
+(document)[_0x3f0e[17]](function () {
   $(_0x3f0e[11])[_0x3f0e[10]](_0x3f0e[0], _0x3f0e[8])[_0x3f0e[9]](_0x3f0e[8]);
   setInterval(function () {
     if (!$(_0x3f0e[13])[_0x3f0e[12]]) {
