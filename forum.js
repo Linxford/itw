@@ -1,13 +1,3 @@
-    
-    
-    /*<![CDATA[*/
-    var limCmt = 30, // Maximum number of comments
-    lengthName = 25, // Maximum name length
-    lengthContent = 100, // Maximum comment length
-    adminUri = 'https://www.blogger.com/profile/18423549431708960193', // Avatar admin
-    blogUri = 'https://istechweb.blogspot.com/', // Linh blog
-    noAvatar = 'https://imgur.com/vpFKnLD.png', // Anonymous Avatar
-    comments = []; // List comments
 
 //Get the number of comments
 function innerTotalComments(e){var t=parseInt(e.feed.openSearch$totalResults.$t),n=parseInt(localStorage.getItem("seen"));n=n||0,document.querySelector(".more-cmt").innerHTML=`View all <b>${t}</b> b\review`,document.querySelector(".more-cmt").title=`See all ${t} b\review`,t>n?document.querySelector(".popup-cmt").dataset.text=t-n:t<n&&localStorage.setItem("seen",t)}
@@ -34,4 +24,4 @@ document.write(
 );
 
 // Displays the number of unread comments
-var commentBtn=document.querySelector(".popup-cmt");commentBtn.addEventListener("click",function(){var t=parseInt(commentBtn.dataset.text),e=parseInt(localStorage.getItem("seen"));e=e||0,t&&(localStorage.setItem("seen",t+e),delete commentBtn.dataset.text)});/*]]>*/
+var commentBtn=document.querySelector(".popup-cmt");commentBtn.addEventListener("click",function(){var t=parseInt(commentBtn.dataset.text),e=parseInt(localStorage.getItem("seen"));e=e||0,t&&(localStorage.setItem("seen",t+e),delete commentBtn.dataset.text)});
